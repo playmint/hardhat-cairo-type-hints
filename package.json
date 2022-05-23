@@ -1,0 +1,41 @@
+{
+  "name": "@playmint/hardhat-cairo-type-hints",
+  "author": "Playmint",
+  "license": "MIT",
+  "version": "0.1.0",
+  "description": "Hardhat plugin for compiling cairo-lang type hints.",
+  "homepage": "https://github.com/playmint/hardhat-cairo-type-hints",
+  "repository": "https://github.com/playmint/hardhat-cairo-type-hints",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "hardhat",
+    "ethereum",
+    "starknet",
+    "starknet-compile",
+    "cairo",
+    "smart-contracts",
+    "blockchain",
+    "dapps",
+    "javascript",
+    "tooling",
+    "typescript",
+    "cairo-type-hints"
+  ],
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm ci && npm run build"
+  },
+  "devDependencies": {
+    "@playmint/hardhat-starknet-compile": "^0.1.4",
+    "@types/mocha": "^9.1.1",
+    "hardhat": "^2.9.3",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "hardhat": "^2.9.3"
+  }
+}
